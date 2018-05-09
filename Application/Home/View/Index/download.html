@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PHP文件流下载</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/easyui/themes/bootstrap/easyui.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/easyui/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/download.css">
+
+	<script type="text/javascript" src="__PUBLIC__/easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/easyui/locale/easyui-lang-zh_CN.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/download.js"></script>
+	<script type="text/javascript">
+		CONTROLLER='__CONTROLLER__';
+		PUBLIC='__PUBLIC__';
+	</script>
+</head>
+<body>
+	<input class="UserID" type="hidden" value="{$Think.session.userinfo.UserID}">   <!-- 真正登录后这里获取登录session UserID -->
+	<a class="download" href="javascript:void(0)">点击下载</a>
+</body>
+</html>
